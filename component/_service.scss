@@ -1,0 +1,43 @@
+#service{
+  padding: 220px 0 120px 0;
+  .service{
+    text-align: center;
+    p{
+      @include mini;
+    }
+    h2{
+      @include headings;
+      max-width: 517px;
+      margin: 0 auto;
+    }
+    .items{
+      text-align: left;
+      margin-top: 40px;
+      padding: 50px 0 50px 30px;
+      box-shadow: 20px 0px 100px 0px rgba(0,65,61,0.1);
+      background: white;
+      width: 370px;
+      margin-top: 40px;
+      h4{
+        font-family: "Vollkorn", serif;
+        font-size: 24px;
+        font-weight: 900;
+        color: $common_color;
+        margin-top: 26px;
+      }
+      p{
+        @include para ($mt: 15px);
+        width: 245px;
+      }
+      .fa-arrow-right-long{
+        color: $common_color;
+        width: 28px;
+        display: inline-block;
+        transition: 0.6s;
+        &:hover{
+          color: $secondary_color;
+        }
+      }
+    }
+  }
+}

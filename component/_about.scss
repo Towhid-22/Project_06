@@ -1,0 +1,38 @@
+#about {
+  .about {
+    .left {
+      width: 370px;
+      height: 480px;
+      background: #c4c4c4;
+    }
+    .center {
+      margin-left: 10px;
+      .center_child1 {
+        width: 170px;
+        height: 225px;
+        background: #c4c4c4;
+      }
+      .center_child2 {
+        width: 170px;
+        height: 225px;
+        background: #c4c4c4;
+        margin-top: 30px;
+      }
+    }
+    .right{
+      margin-left: 10px;
+      h4{
+        @include mini;
+      }
+      h2{
+        @include headings;
+      }
+      p{
+        @include para;
+      }
+      .buttons{
+        @include btn($mt: 30px);
+      }
+    }
+  }
+}

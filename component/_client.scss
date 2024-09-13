@@ -1,0 +1,63 @@
+#client {
+  padding: 190px 0 72px 0;
+  background: #f9f4f1;
+  .client_text {
+    text-align: center;
+    h5 {
+      @include mini;
+    }
+    h2 {
+      @include headings;
+    }
+  }
+  .client_profile {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 30px 0 0 30px;
+    background: #fff;
+    border-top: 4px solid #E5745D;
+    box-shadow: 10px 10px 5px 0px rgba(227,40,70,0.08);
+    position: relative;
+    p{
+      @include para;
+      padding-bottom: 20px;
+    }
+    .clients{
+      position: absolute;
+      left: 81px;
+      bottom: -6px;
+      color: #fff;
+    }
+  }
+  .profile_img{
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+    margin-top: -20px;
+    img{
+      width: 76px;
+      height: 85px;
+      margin-right: 30px;
+    }
+    .name_title{
+      h5{
+        font-family: "Vollkorn", serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 20px;
+        color: $common_color;
+      }
+      p{
+        font-family: "Jost", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        color: $common_color;
+      }
+      .fa-star{
+        color: $secondary_color;
+        margin-top: -10px;
+      }
+    }
+  }
+}

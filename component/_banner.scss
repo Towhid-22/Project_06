@@ -1,0 +1,28 @@
+#banner{
+  padding: 221px 0;
+  background: $common_color;
+  .text_area{
+    h1{
+      font-family: "Vollkorn", serif;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: 110px;
+      color: $white_color;
+    }
+    p{
+      font-family: "Jost", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 400;
+      color: rgb(255, 255, 255, 0.5);
+      max-width: 670px;
+      margin-top: 14px;
+      span{
+        color: $white_color;
+      }
+    }
+    .buttons{
+      @include btn($mt: 50px);
+    }
+  }
+}

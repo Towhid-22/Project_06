@@ -1,0 +1,41 @@
+// paragraph design
+@mixin para($mt: 0) {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: rgb(0, 65, 61, 0.7);
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: $mt;
+}
+
+// mini headings design
+@mixin mini{
+  font-family: "Vollkorn", serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2%;
+  color: $secondary_color;
+}
+
+// button design
+@mixin btn($mt: 0) {
+  font-family: "Jost", sans-serif;
+  background: $secondary_color;
+  border: none;
+  padding: 21px 39px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 12px;
+  color: $white_color;
+  margin-top: $mt;
+}
+
+// heading design
+@mixin headings($mt: 0) {
+  font-family: "Vollkorn", serif;
+  font-size: 50px;
+  line-height: 60px;
+  color: $common_color;
+  font-weight: 500;
+  margin-top: $mt;
+}

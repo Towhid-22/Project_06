@@ -1,0 +1,25 @@
+#navbar{
+  background: #fff;
+  ul{
+    li{
+      a{
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $common_color;
+        padding-left: 48px;
+        transition: 0.4s;
+        &:hover{
+          color: $secondary_color;
+        }
+      }
+      .first_child{
+        padding-left: 0px;
+      }
+    }
+  }
+  .buttons{
+    @include btn;
+  }
+}

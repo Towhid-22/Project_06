@@ -1,0 +1,94 @@
+#portfolio {
+  padding: 120px 0;
+  .portfolio {
+    .portfolio_text {
+      text-align: center;
+      h5 {
+        @include mini;
+      }
+      h2 {
+        @include headings;
+      }
+    }
+    .portfolio_list {
+      text-align: center;
+      margin-top: 24px;
+      ul {
+        li {
+          display: inline-block;
+          margin-right: 25px;
+          a {
+            font-family: "Vollkorn", serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: $common_color;
+            position: relative;
+            &:hover {
+              &::after {
+                content: "";
+                width: 80%;
+                height: 2px;
+                background: #e5745d;
+                position: absolute;
+                left: 50%;
+                bottom: -5px;
+                transform: translateX(-50%);
+              }
+            }
+          }
+        }
+      }
+    }
+    .portfolio_items{
+      width: 570px;
+      height: 520px;
+      background-color: #c4c4c4;
+      position: relative;
+      margin-top: 40px;
+      transition: 0.4s;
+      &:hover{
+        background: rgb(0, 65, 61, 0.5);
+      }
+      .arrow_item{
+        width: 70px;
+        height: 70px;
+        background: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        i{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: #E5745D;
+        }
+      }
+      .portfolio_text{
+        width: 100%;
+        height: 100px;
+        background: $common_color;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+        h3{
+          font-family: "Vollkorn", serif;
+          color: $white_color;
+          font-size: 24px;
+          font-weight: 700;
+          padding-left: 18px;
+          padding-top: 20px;
+        }
+        a{
+          font-family: "Jost", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          color: rgb(255, 255, 255, 0.7);
+          padding-left: 18px;
+        }
+      }
+    }
+  }
+}

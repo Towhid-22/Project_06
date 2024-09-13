@@ -1,0 +1,95 @@
+#projects {
+  margin-top: 120px;
+  .project {
+    h4 {
+      @include mini;
+    }
+    .project_head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h2 {
+        @include headings;
+      }
+      .project_icon {
+        display: flex;
+        .left_arrow {
+          i {
+            color: $common_color;
+          }
+          padding: 5px 10px;
+          margin-right: 5px;
+          border: 1px solid rgb(0, 65, 61, 0.1);
+          transition: 0.4s;
+          &:hover {
+            background: #e5745d;
+          }
+          &:hover i {
+            color: white;
+          }
+        }
+        .right_arrow {
+          i {
+            color: $common_color;
+          }
+          padding: 5px 10px;
+          border: 1px solid rgb(0, 65, 61, 0.1);
+          transition: 0.4s;
+          &:hover {
+            background: #e5745d;
+          }
+          &:hover i {
+            color: white;
+          }
+        }
+      }
+    }
+    .project_items{
+      .items{
+        margin-top: 40px;
+        box-shadow: 20px 0px 100px 0px rgb(147, 147, 147, 0.13);
+        .item_head{
+          width: 100%;
+          height: 270px;
+          background: #C4C4C4;
+        }
+        .item_title{
+          margin-top: 20px;
+          padding-left: 30px;
+          h5{
+            @include mini;
+          }
+          h2{
+            font-family: "Vollkorn", serif;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 500;
+            color: $common_color;
+            width: 304px;
+          }
+          p{
+            @include para;
+          }
+          a{
+            font-family: "Jost", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: $common_color;
+            transition: 0.4s;
+            display: inline-block;
+            padding-bottom: 30px;
+            &:hover{
+              color: $secondary_color;
+            }
+          }
+        }
+      }
+    }
+    .buttons{
+      @include btn;
+      margin: 0 auto;
+      display: block;
+      margin-top: 50px;
+    }
+  }
+}
